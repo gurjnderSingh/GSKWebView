@@ -1,0 +1,6 @@
+framework module GSKWebView {
+  umbrella header "GSKWebView-umbrella.h"
+
+  export *
+  module * { export * }
+}

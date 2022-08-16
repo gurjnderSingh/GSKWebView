@@ -1,23 +1,21 @@
 //
-//  ViewController.swift
-//  GSKWebView
+//  GSWebViewController.swift
+//  GSWebView
 //
-//  Created by 12212137 on 08/16/2022.
-//  Copyright (c) 2022 12212137. All rights reserved.
+//  Created by Gurjinder Singh on 16/08/22.
 //
 
 import UIKit
+import GSKWebView
 
 class ViewController: UIViewController {
+    let webViewC = GSKWebViewController()
+
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let url = URL.init(string: "https://www.yahoo.com")
+        webViewC.url = url
+        self.present(webViewC, animated: true, completion: nil)
     }
 
 }

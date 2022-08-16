@@ -1,0 +1,6 @@
+framework module Pods_GSKWebView_Example {
+  umbrella header "Pods-GSKWebView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
