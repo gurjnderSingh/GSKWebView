@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'GSKWebView_Example' do
+  pod 'GSKWebView', :path => '../'
+
+  target 'GSKWebView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
